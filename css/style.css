@@ -1,0 +1,149 @@
+body {
+    background-image: url("../image/冷蔵庫.png");
+}
+
+h1 {
+    text-align: center;
+    font-size: 70px;
+    color: rgb(255, 102, 0);
+}
+
+.input {
+    width: 820px;
+    height: 300px;
+    background-color: #fffdd0;
+    border: 5px solid #000;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    padding: 0px;
+    margin: 0 auto; /* 画面の中央に配置 */
+}
+
+.input .input2 {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin-bottom: 10px; /* 上下の間隔を調整 */
+}
+
+.input > div {
+    margin: 10px;
+}
+
+.input button {
+    width: 300px;
+    height: 50px;
+    font-size: 20px;
+}
+
+input[type="text"],input[type="date"] {
+    width: 350px;
+    height: 50px;
+    font-size: 20px;
+    text-align: center;
+}
+
+::placeholder {
+    font-size: 20px; /* フォントサイズを指定 */
+    text-align: center;
+}
+
+div {
+    padding: 0px 10px;
+}
+
+
+#category {
+    width: 200px;
+    height: 40px;
+    font-size: 20px;
+    text-align: center;
+}
+
+#save {
+    width: 300px;
+    height: 50px;
+    font-size: 20px;
+    text-align: center;
+}
+
+.list-group {
+    display: grid;
+    grid-template-columns: repeat(2, 1fr); /* 2列のグリッド */
+    grid-template-rows: repeat(4, 1fr); /* 4行のグリッド */
+    gap: 20px; /* 要素間の間隔 */
+    background-color: #fffdd0;
+    border: 5px solid #000;
+    width: 830px;
+    height: 1200px;
+    margin: 0 auto; /* 中央に配置 */
+    padding-top: 30px;
+    font-size: 30px;
+    text-align: center;
+    list-style: none;
+    padding-left: 0px;
+    padding-right: 0px;
+    box-sizing: border-box; /* 追加 */
+}
+
+.categoryBox {
+    background-color: #fffdd0;
+    border: 5px solid #000;
+    padding: 10px;
+    text-align: center;
+    margin: 0px 5px;
+    height: 100%; /* 高さを100%に設定 */
+    box-sizing: border-box;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    font-size: 20px;
+}
+
+.categoryBox h2 {
+    text-align: center;
+    margin-top: 0px;
+    font-size: 20px;
+}
+
+.categoryBox ul {
+    margin: 0;
+    padding: 0;
+    list-style: none;
+    flex-grow: 1; /* ul要素が余ったスペースを占有するようにする */
+    display: flex;
+    flex-direction: column;
+    justify-content: flex-start; /* 上寄せにする */
+}
+
+.categoryBox ul li {
+    margin-left: 1em;
+    font-size: 20px;
+}
+
+.categoryContainer {
+    display: flex;
+    justify-content: center;
+    align-items: center; /* 追加 */
+    height: 100%; /* 追加 */
+}
+
+.delete {
+    background-color: #FFB74D;
+    border: none;
+    color: #FFFFFF;
+    font-size: 20px;
+    font-weight: bold;
+    padding: 5px 10px;
+    border-radius: 8px;
+    cursor: pointer;
+  }
+  
+  .delete:hover {
+    background-color: #FF9800;
+  }
+  
+  
+

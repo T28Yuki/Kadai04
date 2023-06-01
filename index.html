@@ -1,0 +1,95 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>冷蔵庫在庫管理アプリ</title>
+    <link rel="stylesheet" href="../メモ帳アプリ/css/style.css">
+    <style>
+        /* 画面全体に適用するスタイル */
+        body {
+            max-width: 1000px;
+            height: 1000px;
+            margin: 0 auto; /* 中央に配置するために追加 */
+        }
+    
+        /* メディアクエリの設定 */
+        @media (max-width: 1000px) {
+            body {
+                font-size: 16px;
+                max-width: none; /* メディアクエリの場合は最大幅を解除する */
+            }
+        }
+    </style>
+</head>
+<body>
+    <header>
+        <h1>冷蔵庫在庫アプリ</h1>
+    </header>
+
+    <div class="input">
+        <div>
+            <select id="category">
+                <option value="空欄">カテゴリーを選択</option>
+                <option value="meat" data-category="category-肉">肉</option>
+                <option value="fish" data-category="category-魚">魚</option>
+                <option value="vegetables-fruit" data-category="category-野菜-果物">野菜/果物</option>
+                <option value="soy-egg-products" data-category="category-大豆-たまご製品">豆/たまご製品</option>
+                <option value="dairy" data-category="category-乳製品">乳製品</option>
+                <option value="seasonings" data-category="category-調味料">調味料</option>
+                <option value="other" data-category="category-その他">その他</option>
+            </select>
+        </div>
+
+        <div class="input2">
+            <div>
+                <label for="key" style="font-size: 20px; font-weight: bold;">購入商品</label>
+                <input type="text" id="key" placeholder="商品名を入力" style="width: 350px; height: 50px; font-size: 20px;">
+            </div>
+
+            <div>
+                <label for="dates" style="font-size: 20px; font-weight: bold;">購入日または期限</label>
+                <input type="date" id="dates" placeholder="購入日または期限" style="width: 350px; height: 50px; font-size: 20px;">
+            </div>
+        </div>
+
+        <button id="save" type="button">購入商品と日付を記録</button>
+    </div>
+
+    <div class="list-group">
+        <div id="category-meat" class="categoryBox" >
+            <h2>【肉（賞味期限）】</h2>
+            <ul></ul>
+        </div>
+        <div id="category-fish" class="categoryBox" >
+            <h2>【魚（賞味期限）】</h2>
+            <ul></ul>
+        </div>
+        <div id="category-vegetables-fruit" class="categoryBox" >
+            <h2>【野菜/果物（購入日）】</h2>
+            <ul></ul>
+        </div>
+        <div id="category-soy-egg-products" class="categoryBox" >
+            <h2>【大豆/たまご製品（賞味期限）】</h2>
+            <ul></ul>
+        </div>
+        <div id="category-dairy" class="categoryBox" >
+            <h2>【乳製品（賞味期限）】</h2>
+            <ul></ul>
+        </div>
+        <div id="category-seasonings" class="categoryBox" >
+            <h2>【調味料（賞味期限）】</h2>
+            <ul></ul>
+        </div>
+        <div id="category-other" class="categoryBox" >
+            <h2>【その他】</h2>
+            <ul></ul>
+        </div>
+    </div>
+         
+    <script src="https://code.jquery.com/jquery-3.2.1.min.js"></script>
+    <script src="../メモ帳アプリ/js/memo.js"></script>
+</body>
+
+</html>
